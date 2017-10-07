@@ -1,0 +1,47 @@
+
+#respuesta{
+ color:#FFFFFF;
+ font-family:Consolas,monospace;
+ position:relative;
+ float:left;
+ font-size:100%;
+}
+
+@keyframes parpadeo{
+ from, to{border-color:transparent}
+ 50%{border-color:#FFFFFF}
+}
+@keyframes escribiendo{
+ from{width:100%}
+ to{width:0}
+}
+@-webkit-keyframes parpadeo{
+ from, to{border-color:transparent}
+ 50%{border-color:#FFFFFF}
+}
+@-webkit-keyframes escribiendo{
+ from{width:100%}
+ to{width:0}
+}
+@-moz-keyframes parpadeo {
+ from, to{border-color:transparent}
+ 50%{border-color:#FFFFFF}
+} 
+@-moz-keyframes escribiendo {
+ from{width:100%}
+ to{width:0}
+}
+#respuesta span{
+ position:absolute;
+ top:0;
+ right:0;
+ width:0;
+ background-color:#000000;
+ border-left: .1em solid #FFFFFF;
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+ -webkit-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+ -moz-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+}
