@@ -1,15 +1,16 @@
 
 #respuesta{
- color:#FFFFFF;
+/* color:#FFFFFF;
  font-family:Consolas,monospace;
  position:relative;
- float:left;
- font-size:100%;
+ float:left;font-size:100%;*/
+ position: absolute;
+ width: 45%;
 }
 
 @keyframes parpadeo{
  from, to{border-color:transparent}
- 50%{border-color:#FFFFFF}
+ 50%{border-color:rgba(0,0,0,0.8)}
 }
 @keyframes escribiendo{
  from{width:100%}
@@ -17,7 +18,7 @@
 }
 @-webkit-keyframes parpadeo{
  from, to{border-color:transparent}
- 50%{border-color:#FFFFFF}
+ 50%{border-color:rgba(0,0,0,0.8)}
 }
 @-webkit-keyframes escribiendo{
  from{width:100%}
@@ -25,7 +26,7 @@
 }
 @-moz-keyframes parpadeo {
  from, to{border-color:transparent}
- 50%{border-color:#FFFFFF}
+ 50%{border-color:rgba(0,0,0,0.8)}
 } 
 @-moz-keyframes escribiendo {
  from{width:100%}
@@ -36,8 +37,9 @@
  top:0;
  right:0;
  width:0;
- background-color:#000000;
- border-left: .1em solid #FFFFFF;
+ height: 100%;
+ background-color:#28B67B;
+ border-left: .1em solid rgba(0,0,0,0.8);
  box-sizing: border-box;
  -webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;

@@ -1,0 +1,327 @@
+body{
+	font-family: Roboto condensed;
+}
+.table{
+	display: table;
+	width: 100%;
+	margin: auto;
+}
+ section .presupuesto .cont-pasos .paso p {
+    font-size: 20px;
+    font-family: Roboto condensed;
+    margin-bottom: 0px;
+}
+section .presupuesto .cont-btn button {
+    background-color: #001D7E;
+    border-radius: 2px;
+}
+/* Small - SM */
+@media(min-width:768px) and (max-width:991px) {
+header .menu .navbar-brand {
+	padding: 15px 0;
+}
+header .menu .navbar-brand img{
+	max-width: 140px;
+}
+header .menu .navbar-nav li > a{
+	margin: 0 7px;
+}
+footer .redes {
+	padding: 10px 15px;
+}
+header .menu .navbar-nav li > a {
+	font-size: 18px;
+    padding: 10px 0;
+}
+header .menu .navbar .navbar-collapse ul .submenu li a{
+	font-size: 14px;
+	line-height: 16px;
+}
+header .menu .navbar-collapse .navbar-nav.navbar-right{
+	padding: 55px 0 0;
+}
+
+section.home .item-destacado h3{
+    font-size: 24px;
+    padding: 20px 10px 10px;
+    line-height: 30px;
+    min-height: 90px;
+}
+section.home .item-destacado h3 img{
+	margin-bottom: 10px;
+	max-width: 25px;
+	margin-right: 10px;
+}
+section.galeria .item-galeria p{
+	min-height: 120px;
+}
+.img-main-sec .dire {
+    left: 1%;
+    top: 39%;
+}
+
+}
+
+/* Medium - MD */
+@media(min-width:992px) and (max-width:1199px) {
+header .menu .navbar-brand {
+	max-width: 300px;
+	padding: 15px 0;
+}
+section.home .item-destacado h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+section.home .item-destacado h3 img{
+	margin-bottom: 10px;
+	max-width: 30px;
+}
+header .menu .navbar-nav li > a{
+	margin: 0 7px;
+}
+footer .redes {
+	padding: 10px 15px;
+}
+.img-main-sec .dire{
+	left: 20%;
+}
+
+
+
+}
+
+/* Large - LG */
+@media(min-width:1200px) {
+}
+
+
+section .presupuesto{
+	overflow: hidden;
+    padding: 60px 0;
+}
+section .presupuesto .cont-pasos{}
+section .presupuesto .cont-pasos .paso{
+	width: 30%;
+}
+section .presupuesto .cont-pasos .paso.active{}
+section .presupuesto .cont-pasos .paso span{
+	color: #5E5E5E;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 400;
+	text-align: center;
+	width: 111px;
+	height: 158px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 12px;
+}
+section .presupuesto .cont-pasos .paso.active span{}
+section .presupuesto .cont-pasos .obra{
+	background: url(../imagenes/estado4.png) no-repeat center top;
+}
+section .presupuesto .cont-pasos .obra.active{
+	background: url(../imagenes/estado1.png) no-repeat center top;
+}
+
+section .presupuesto .cont-pasos .datos{
+	background: url(../imagenes/estado2.png) no-repeat center top;
+}
+section .presupuesto .cont-pasos .datos.active{
+	background: url(../imagenes/estado3.png) no-repeat center top;
+}
+
+section .presupuesto .cont-pasos .paso p{
+	font-family: 'Raleway', sans-serif;
+	color: #CCCCCC;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+	padding-bottom: 10px;
+ /*background: url(../imagenes/presupuesto/1.png) no-repeat center bottom;*/
+  background: url(../img/iconos/bg-linea-presupuesto-1.png) no-repeat center bottom;
+
+
+
+}
+/***********/
+section .presupuesto .cont-pasos .paso.obra.active p{
+	background: url(../img/iconos/bg-linea-presupuesto-2.png) no-repeat center bottom;
+}
+section .presupuesto .cont-pasos .paso.datos.active p{
+	background: url(../img/iconos/bg-linea-presupuesto-2.png) no-repeat center bottom;
+}
+/***********/
+section .presupuesto .cont-pasos .paso.active p{
+	color: #5E5E5E;
+	font-weight: 500;
+}
+section .presupuesto .cont-pasos .linea{
+	/*max-width: 200px;*/
+}
+section .presupuesto .cont-pasos .linea hr{
+	height: 1px;
+	background: #DDDDDD;
+	margin: 0 -85px;
+}
+section .presupuesto .pasos{}
+section .presupuesto .pasos p{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+section .presupuesto .pasos p label{
+	float: left;
+	color: #555555;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 400;
+	padding-right: 10px;
+	padding-top: 5px;
+	width: 20%;
+	text-align: right;
+}
+section .presupuesto .pasos p input{
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #CCCCCC;
+	box-shadow: none;
+	width: 100%;
+	padding: 10px;
+    height: 34px;
+	color: #888888;
+}
+section .presupuesto .pasos p textarea{
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #CCCCCC;
+	box-shadow: none;
+	min-height: 60px;
+	width: 100%;
+	color: #5E5E5E;
+}
+section .presupuesto .cont-btn{
+	overflow: hidden;
+}
+section .presupuesto .cont-btn button{
+	border-radius: 30px;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 15px;
+    background: #1059AC;
+    padding: 15px 45px;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    margin: 30px 0 30px 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    height: 45px;
+    width: 170px;
+}
+
+section .presupuesto .cont-btn .boton-atras{
+	background: #fff;
+	color: #312BA7;
+	border: 1px solid #312BA7;
+}
+
+section .presupuesto .cont-btn .boton-atras:hover{
+	background: #312BA7;
+	color: #fff;
+	border: 1px solid #312BA7;
+}
+section .presupuesto .cont-btn button:hover{
+	opacity: 0.9;
+}
+section .presupuesto .pasos p .input-group{}
+section .presupuesto .pasos p .input-group span{}
+section .presupuesto .pasos p .input-group span input{}
+section .presupuesto .pasos .examinar{}
+section .presupuesto .pasos .examinar label{
+	float: left;
+	color: #555555;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 400;
+	padding-right: 10px;
+	padding-top: 5px;
+	width: 20%;
+	text-align: right;
+}
+section .presupuesto .pasos .examinar .input-group{
+	float: left;
+    width: 100%;
+}
+section .presupuesto .pasos .examinar .input-group-btn{
+	border-radius: 2px;
+    float: right;
+    padding-right: 0;
+    text-align: center;
+    padding: 10px 0;
+    color: #FFF;
+    font-size: 14px;
+    height: 34px;
+    width: 40%;
+    text-transform: uppercase;
+    line-height: 16px;
+    background: #001D7E;
+    margin: 0;
+    cursor: pointer;
+}
+
+section .presupuesto .pasos .examinar .input-group-btn:hover{
+	opacity: 0.8;
+}
+section .presupuesto .pasos .examinar .input-group-btn span{
+	border-radius: 0;
+}
+section .presupuesto .pasos .examinar .input-group input[type=file]{}
+section .presupuesto .pasos .examinar .input-group input[type=text]{
+	width: 50%;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    box-shadow: none;
+    padding: 10px;
+    height: 34px;
+    background: #FFF;
+    color: #5E5E5E;
+
+    text-align:right;
+}
+
+section .presupuesto .pasos .examinar .agregar{
+	float: right;
+	color: #000;
+	font-size: 14px;
+	text-decoration: underline;
+	margin: 15px 0 0;
+}
+section .presupuesto .cont-btn .anterior{
+	border-radius: 25px;
+    text-align: center;
+    color: #69C200;
+    font-size: 15px;
+    line-height: 18px;
+    height: 48px;
+    background: #FFF;
+    padding: 13px 45px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #69C200;
+    margin: 30px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+section .presupuesto .cont-btn .anterior:hover{
+	color: #69C200;
+	border: 1px solid #69C200;
+}
+section .presupuesto .cont-btn a:hover{
+	text-decoration: none;
+}
