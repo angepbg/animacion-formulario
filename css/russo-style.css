@@ -1,12 +1,13 @@
 body{
 	font-family: Roboto condensed;
 }
-.table{
+.table{ 
 	display: table;
 	width: 100%;
 	margin: auto;
+	margin-bottom: 0px !important;
 }
- section .presupuesto .cont-pasos .paso p {
+section .presupuesto .cont-pasos .paso p, .linea p {
     font-size: 20px;
     font-family: Roboto condensed;
     margin-bottom: 0px;
@@ -15,95 +16,13 @@ section .presupuesto .cont-btn button {
     background-color: #001D7E;
     border-radius: 2px;
 }
-/* Small - SM */
-@media(min-width:768px) and (max-width:991px) {
-header .menu .navbar-brand {
-	padding: 15px 0;
-}
-header .menu .navbar-brand img{
-	max-width: 140px;
-}
-header .menu .navbar-nav li > a{
-	margin: 0 7px;
-}
-footer .redes {
-	padding: 10px 15px;
-}
-header .menu .navbar-nav li > a {
-	font-size: 18px;
-    padding: 10px 0;
-}
-header .menu .navbar .navbar-collapse ul .submenu li a{
-	font-size: 14px;
-	line-height: 16px;
-}
-header .menu .navbar-collapse .navbar-nav.navbar-right{
-	padding: 55px 0 0;
-}
-
-section.home .item-destacado h3{
-    font-size: 24px;
-    padding: 20px 10px 10px;
-    line-height: 30px;
-    min-height: 90px;
-}
-section.home .item-destacado h3 img{
-	margin-bottom: 10px;
-	max-width: 25px;
-	margin-right: 10px;
-}
-section.galeria .item-galeria p{
-	min-height: 120px;
-}
-.img-main-sec .dire {
-    left: 1%;
-    top: 39%;
-}
-
-}
-
-/* Medium - MD */
-@media(min-width:992px) and (max-width:1199px) {
-header .menu .navbar-brand {
-	max-width: 300px;
-	padding: 15px 0;
-}
-section.home .item-destacado h3{
-    font-size: 24px;
-    line-height: 30px;
-}
-section.home .item-destacado h3 img{
-	margin-bottom: 10px;
-	max-width: 30px;
-}
-header .menu .navbar-nav li > a{
-	margin: 0 7px;
-}
-footer .redes {
-	padding: 10px 15px;
-}
-.img-main-sec .dire{
-	left: 20%;
-}
-
-
-
-}
-
-/* Large - LG */
-@media(min-width:1200px) {
-}
-
-
 section .presupuesto{
 	overflow: hidden;
     padding: 60px 0;
 }
-section .presupuesto .cont-pasos{}
 section .presupuesto .cont-pasos .paso{
 	width: 30%;
 }
-section .presupuesto .cont-pasos .paso.active{}
 section .presupuesto .cont-pasos .paso span{
 	color: #5E5E5E;
 	font-size: 28px;
@@ -111,24 +30,23 @@ section .presupuesto .cont-pasos .paso span{
 	font-weight: 400;
 	text-align: center;
 	width: 111px;
-	height: 158px;
+	height: 80px;
 	margin: 0 auto;
 	display: block;
 	padding-top: 12px;
 }
-section .presupuesto .cont-pasos .paso.active span{}
 section .presupuesto .cont-pasos .obra{
-	background: url(../imagenes/estado4.png) no-repeat center top;
+	background: url(../imagenes/js.png) no-repeat center top;
 }
 section .presupuesto .cont-pasos .obra.active{
-	background: url(../imagenes/estado1.png) no-repeat center top;
+	background: url(../imagenes/js-activo.png) no-repeat center top;
 }
 
 section .presupuesto .cont-pasos .datos{
-	background: url(../imagenes/estado2.png) no-repeat center top;
+	background: url(../imagenes/css.png) no-repeat center top;
 }
 section .presupuesto .cont-pasos .datos.active{
-	background: url(../imagenes/estado3.png) no-repeat center top;
+	background: url(../imagenes/css-activo.png) no-repeat center top;
 }
 
 section .presupuesto .cont-pasos .paso p{
@@ -139,35 +57,19 @@ section .presupuesto .cont-pasos .paso p{
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-    margin: 30px 0;
+    margin: 10px 0;
 	padding-bottom: 10px;
- /*background: url(../imagenes/presupuesto/1.png) no-repeat center bottom;*/
-  background: url(../img/iconos/bg-linea-presupuesto-1.png) no-repeat center bottom;
-
-
-
+  	background: url(../img/iconos/bg-linea-presupuesto-1.png) no-repeat center bottom;
 }
-/***********/
-section .presupuesto .cont-pasos .paso.obra.active p{
-	background: url(../img/iconos/bg-linea-presupuesto-2.png) no-repeat center bottom;
-}
-section .presupuesto .cont-pasos .paso.datos.active p{
-	background: url(../img/iconos/bg-linea-presupuesto-2.png) no-repeat center bottom;
-}
-/***********/
+
 section .presupuesto .cont-pasos .paso.active p{
 	color: #5E5E5E;
 	font-weight: 500;
 }
-section .presupuesto .cont-pasos .linea{
-	/*max-width: 200px;*/
-}
 section .presupuesto .cont-pasos .linea hr{
 	height: 1px;
 	background: #DDDDDD;
-	margin: 0 -85px;
 }
-section .presupuesto .pasos{}
 section .presupuesto .pasos p{
 	overflow: hidden;
 	margin-bottom: 10px;
@@ -222,7 +124,6 @@ section .presupuesto .cont-btn button{
     height: 45px;
     width: 170px;
 }
-
 section .presupuesto .cont-btn .boton-atras{
 	background: #fff;
 	color: #312BA7;
@@ -237,10 +138,6 @@ section .presupuesto .cont-btn .boton-atras:hover{
 section .presupuesto .cont-btn button:hover{
 	opacity: 0.9;
 }
-section .presupuesto .pasos p .input-group{}
-section .presupuesto .pasos p .input-group span{}
-section .presupuesto .pasos p .input-group span input{}
-section .presupuesto .pasos .examinar{}
 section .presupuesto .pasos .examinar label{
 	float: left;
 	color: #555555;
@@ -279,7 +176,6 @@ section .presupuesto .pasos .examinar .input-group-btn:hover{
 section .presupuesto .pasos .examinar .input-group-btn span{
 	border-radius: 0;
 }
-section .presupuesto .pasos .examinar .input-group input[type=file]{}
 section .presupuesto .pasos .examinar .input-group input[type=text]{
 	width: 50%;
     float: left;
@@ -290,38 +186,27 @@ section .presupuesto .pasos .examinar .input-group input[type=text]{
     height: 34px;
     background: #FFF;
     color: #5E5E5E;
-
     text-align:right;
 }
 
-section .presupuesto .pasos .examinar .agregar{
-	float: right;
-	color: #000;
-	font-size: 14px;
-	text-decoration: underline;
-	margin: 15px 0 0;
+/*Estilos de HTML a CSS*/
+.subrayar{
+	width: 15%;
+	border-bottom: 1px solid; 
+	color: #3023AA;
+	margin-right: auto; 
+	margin-left: auto;
+	margin-bottom: 30px;
 }
-section .presupuesto .cont-btn .anterior{
-	border-radius: 25px;
-    text-align: center;
-    color: #69C200;
-    font-size: 15px;
-    line-height: 18px;
-    height: 48px;
-    background: #FFF;
-    padding: 13px 45px;
-    display: block;
-    cursor: pointer;
-    border: 1px solid #69C200;
-    margin: 30px 0;
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+.linea hr{
+	border-color: #DDDDDD; 
+	margin-top: 75px;
 }
-section .presupuesto .cont-btn .anterior:hover{
-	color: #69C200;
-	border: 1px solid #69C200;
+#estado2{
+	display: none;
 }
-section .presupuesto .cont-btn a:hover{
-	text-decoration: none;
+.plano {
+	margin-top: 10px; 
+	margin-right: 10px; 
+	width: 55%;
 }

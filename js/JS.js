@@ -46,7 +46,4 @@
           $(this).removeClass("animated "+clase);
         });
     };
-   /* document.getElementById('archivo').onchange = function () {
-      console.log(this.value);
-      document.getElementById('plano').innerHTML = document.getElementById('archivo').files[0].name;
-    }*/
+  

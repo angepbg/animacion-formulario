@@ -13,10 +13,8 @@
     <meta name="description" content=""> 
 
     <link rel="stylesheet" href="css/animate.min.css"> <!-- librería CSS3 para crear animaciones -->
+    <link rel="stylesheet" href="css/animacion.css">
     <link rel="stylesheet" type="text/css" href="css/russo-style.css">
- <!-- <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script> 
-  Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
      
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -26,93 +24,97 @@
 
 </head>
 <body>
-
-    <section class="main productos" style="">
+    <section class="main productos">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 main-cont presupuesto center" style="float: initial">  
-                   <div class="cont-pasos table">
-                    
+            <div class="row"> 
+             <center>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 presupuesto" style="float: initial">  
+                    <div class="cont-pasos table">
                       <div class="paso datos active col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1" id="elDiv1">
                           <span></span>
-                          <p>Tus datos</p>
-                          <div style="width: 15%; border-bottom: 1px solid; color: #3023AA;margin-right: auto; margin-left: auto;margin-bottom: 30px;"></div>
+                          <p>Animación</p>
+                          <div class="subrayar"></div>
                       </div>
-                      <div class="linea col-xs-12 col-sm-3 col-md-3 col-lg-3 re-padding">
-                          <hr class="hidden-xs" style="border-color: #DDDDDD; margin-top: 75px;">
+                      <div class="linea col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                          <p>TUTORIAL</p>
+                          <hr class="hidden-xs translado">
                       </div>
                       <div class="paso obra col-xs-12 col-sm-4 col-md-4 col-lg-4" id="elDiv2">
                           <span></span>
-                          <p>Tu pieza</p>
-                          <div style="width: 15%; border-bottom: 1px solid; color: #3023AA;margin-right: auto; margin-left: auto; margin-bottom: 30px;"></div>
+                          <p>Manejo</p>
+                          <div class="subrayar"></div>
                       </div>
-                  </div>
-                  
-                  <form action="enviarpresupuesto.php" method="post" enctype="multipart/form-data">
-                <div id="estado1">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 active pasos paso-1">
-                    <p>
-                        <input type="text" name="nombre" id="nombre" class="form-control" value="" placeholder="Nombre"  title="" required>
-                    </p>
-                    <p>
-                        <input type="text" name="mail" id="mail" class="form-control" value="" placeholder="E-mail" title="" required>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pasos paso-1">
-                    <p>
-                        <input type="text" name="localidad" id="est" class="form-control" value="" placeholder="Localidad"  title="">
-                    </p>
-                    <p>
-                        <input type="text" name="tel" id="tel" class="form-control" value="" placeholder="Teléfono" title="">
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cont-btn">
-                    <!-- <a href="presupuesto.php">Paso anterior</a> -->
-                    <button type="button" class="btn btn-default pull-right anima2 boton-siguiente" id="botonSiguienteEstado">Siguiente</button>
-                </div>
-            </div>
-            
-            <div id="estado2" style="display: none;">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pasos paso-2">
-                    <p>
-                        <textarea name="detalle" id="detalle" placeholder="Detalles" class="form-control" rows="6" style="height: 90px;"></textarea>
-                    </p>
-                    
-                </div>
-                
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pasos paso-2" style="margin-bottom: 40px">
-                    <p>
-                        <input type="text" name="medida" id="medida" placeholder="Medida (opcional)" class="form-control" value="" title="">
-                    </p>
-                    <div class="examinar">
-                        <div class="input-group">
-                            <input type="text" name="plano" id="plano" placeholder="Plano (opcional)" disabled="true" class="col-xs-10 form-control" style="margin-top: 10px; margin-right: 10px; width: 55%;">
-                            <label class="input-group-btn" style="margin-top: 10px;">
-                                <span class="btn-exam">
-                                    <input type="file" style="display: none;" name="archivo" id="archivo" multiple="">
-                                    Examinar
-                                </span>
-                            </label>
-                            
-                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cont-btn">
-                    <button type="submit" class="btn btn-default pull-right anima2 boton-enviar">Enviar</button>
-                    <button type="button" class="btn btn-default pull-right anima2 boton-atras" id="botonEstadoAnterior">Anterior</button>
-                </div>
-            </div>
+                  
+                    <form action="enviarpresupuesto.php" method="post" enctype="multipart/form-data">
+                        <div id="estado1">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 active pasos">
+                                <p>
+                                    <label for="nombre" style="width:100%; text-align:left;">¿Como me animas?</label>
+                                    <h4 id="respuesta" style="width:23%;">animate.css<span></span></h4>
+                                    <input type="text" name="nombre" id="nombre" class="form-control" value="" placeholder=""  title="" required>
+                                    
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pasos">
+                                <p>
+                                    <label for="nombre" style="width:100%; text-align:left;">¿Que clases uso?</label>
+                                    <h4 id="respuesta">animated bounceOutLeft<span></span></h4>
+                                    <input type="text" name="localidad" id="est" class="form-control" value="" placeholder=""  title="">
+                                </p>
+                                <p>
+                                    <h4 id="respuesta">animated bounceInRight<span></span></h4>
+                                    <input type="text" name="tel" id="tel" class="form-control" value="" placeholder="" title="">
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cont-btn">
+                                <button type="button" class="btn btn-default pull-right" id="botonSiguienteEstado">Siguiente</button>
+                            </div>
+                        </div>
             
-            </form>
-                   
-                 </div>
+                        <div id="estado2">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pasos">
+                                <p>
+                                    <label for="nombre" style="width:100%; text-align:left;">¿Como me manejas?</label>
+                                    <h4 id="respuesta" style="width:20%;">JavaScript<span></span></h4>
+                                    <input type="text" name="tel" id="tel" class="form-control" value="" placeholder="" title="">
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pasos" style="margin-bottom: 40px">
+                                <p>
+                                    <label for="nombre" style="width:100%; text-align:left;">¿Que evento uso?</label>
+                                    <h4 id="respuesta" style="width:10%;">Click<span></span></h4>
+                                    <input type="text" name="medida" id="medida" placeholder="" class="form-control" value="" title="">
+                                </p>
+                            </div>
+                            <div>
+                              <p>
+                                <label for="nombre" style="width:100%; text-align:left;">¿Como me ocultas?</label>
+                                <h4 id="respuesta" style="width:55%;">document.getElementById("estado1").style.display = "none";<span></span></h4>
+                                <input type="text" name="medida" id="medida" placeholder="" class="form-control" value="" title="">
+                              </p>
+                            </div>
+                             <div>
+                               <p>
+                                <label for="nombre" style="width:100%; text-align:left;">¿Como aparzco?</label>
+                                <h4 id="respuesta" style="width:55%;">document.getElementById("estado2").style.display ="block";<span></span></h4>
+                                <input type="text" name="medida" id="medida" placeholder="" class="form-control" value="" title="">
+                              </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cont-btn">
+                                <button type="button" class="btn btn-default pull-right anima2 boton-atras" id="botonEstadoAnterior">Anterior</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </center>
             </div>
-          </div> 
-          
-         </section>
+        </div> 
+    </section>
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script> <!-- llamado a jQuery -->
-<script src="js/bootstrap.min.js"></script> <!-- llamado a js de BOOTSTRAP que trabaja con Jquery es por eso que se pone debajo del jQuery.js -->
-<script src="js/JS.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> <!-- llamado a jQuery -->
+    <script src="js/bootstrap.min.js"></script> <!-- llamado a js de BOOTSTRAP que trabaja con Jquery es por eso que se pone debajo del jQuery.js -->
+    <script src="js/JS.js"></script>
+
 </body>
 </html>
