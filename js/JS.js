@@ -13,6 +13,14 @@
    //método asigna un controlador de evento click al elemento especificado.
     document.getElementById("botonSiguienteEstado").addEventListener("click", mostrarEstado2); 
     document.getElementById("botonEstadoAnterior").addEventListener("click", mostrarEstado1); 
+    document.getElementById("anima").addEventListener("click", mostrarTextoAnima);
+    document.getElementById("clase").addEventListener("click", mostrarTextoClase);
+    document.getElementById("clase2").addEventListener("click", mostrarTextoClase2);
+    document.getElementById("js").addEventListener("click", mostrarTextoJS);
+    document.getElementById("click").addEventListener("click", mostrarTextoClick);
+    document.getElementById("none").addEventListener("click", mostrarTextoNone);
+    document.getElementById("block").addEventListener("click", mostrarTextoBlock);
+    document.getElementById("resp").addEventListener("click", mostrarTextoResp);
 
     function mostrarEstado2() {
         document.getElementById("estado1").className = "animated bounceOutLeft"; // efecto deslizante de salida para la izquierda
@@ -40,7 +48,47 @@
             document.getElementById("elDiv2").className = "paso obra col-xs-12 col-sm-4 col-md-4 col-lg-4"; //cambioa imagen de obra inactiva
         }, 1000);//setTimeout---> Primer parámetro es la función a ejecutar y el segundo indica el número
     }            // en milisegundos antes de la ejecución
-    
+
+    function mostrarTextoAnima() {  
+        document.getElementById("animated").style.display = "block";
+        document.getElementById("animated").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoClase() {  
+        document.getElementById("bounce").style.display = "block";
+        document.getElementById("bounce").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoClase2() {  
+        document.getElementById("bounceR").style.display = "block";
+        document.getElementById("bounceR").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoJS() {  
+        document.getElementById("javascript").style.display = "block";
+        document.getElementById("javascript").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoClick() {  
+        document.getElementById("click-evt").style.display = "block";
+        document.getElementById("click-evt").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoNone() {  
+        document.getElementById("disp-none").style.display = "block";
+        document.getElementById("disp-none").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoBlock() {  
+        document.getElementById("disp-block").style.display = "block";
+        document.getElementById("disp-block").setAttribute("id", "respuesta");
+    }
+
+    function mostrarTextoResp() {  
+        document.getElementById("id-resp").style.display = "block";
+        document.getElementById("id-resp").setAttribute("id", "respuesta");
+    }
+
     function animacion(id, clase) {
         $(id).removeClass("animated "+clase).addClass(clase + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
           $(this).removeClass("animated "+clase);

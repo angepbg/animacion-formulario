@@ -210,3 +210,12 @@ section .presupuesto .pasos .examinar .input-group input[type=text]{
 	margin-right: 10px; 
 	width: 55%;
 }
+#animated, #bounce, #bounceR, #javascript, #click-evt, #disp-none, #disp-block, #id-resp{
+	display: none;
+}
+form .pasos .cursor, form .marca .cursor{ /*Quita el cursor del input*/
+	color: transparent ;
+}
+.cursor:focus{
+	outline: none;
+}
