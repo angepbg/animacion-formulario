@@ -24,13 +24,25 @@
 
     function mostrarEstado2() {
         document.getElementById("estado1").className = "animated bounceOutLeft"; // efecto deslizante de salida para la izquierda
+        
+        document.getElementById("elDiv1").className = "paso datos col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1 animated bounceOutRight"; //efecto deslizante de salida para la derecha
+        document.getElementById("elDiv2").className = "paso obra active col-xs-12 col-sm-4 col-md-4 col-lg-4 animated bounceOutRight";//efecto deslizante de salida para la derecha
+        document.getElementById("titulo").className = "linea col-xs-12 col-sm-3 col-md-3 col-lg-3 animated bounceOutRight"; //efecto deslizante de salida para la derecha
         setTimeout(function(){ 
-            document.getElementById("estado1").style.display = "none"; // Ocultar el elemento estado1
-            document.getElementById("estado2").style.display = "block"; // Mostrar el elemento estado2
-            document.getElementById("estado2").className = "animated bounceInRight"; // efecto deslizante de entrada para la izquierda
             
-            document.getElementById("elDiv1").className = "paso datos col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1"; //cambio a imagen de datos inactiva
-            document.getElementById("elDiv2").className = "paso obra active col-xs-12 col-sm-4 col-md-4 col-lg-4";//cambioa imagen de obra activa
+            document.getElementById("estado1").style.display = "none"; // Ocultar el elemento estado1
+            document.getElementById("elDiv1").style.display = "none"; // Ocultar el div1
+            document.getElementById("elDiv2").style.display = "none"; // Ocultar el div2
+            document.getElementById("titulo").style.display = "none"; // Ocultar el titulo-tutorial
+            document.getElementById("estado2").style.display = "block"; // Mostrar el elemento estado2
+            document.getElementById("estado2").className = "animated bounceInRight"; // efecto deslizante de entrada para la derecha
+            
+            document.getElementById("elDiv1").style.display = "block"; // mostrar el elemento div1
+            document.getElementById("elDiv2").style.display = "block"; // mostrar el elemento div2
+            document.getElementById("titulo").style.display = "block"; // mostrar el titulo-tutorial
+            document.getElementById("elDiv1").className = "paso datos col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1 animated bounceInLeft"; // efecto deslizante de entrada para la izquierda
+            document.getElementById("elDiv2").className = "paso obra active col-xs-12 col-sm-4 col-md-4 col-lg-4 animated bounceInLeft";// efecto deslizante de entrada para la izquierda
+            document.getElementById("titulo").className = "linea col-xs-12 col-sm-3 col-md-3 col-lg-3 animated bounceInLeft"; // efecto deslizante de entrada para la izquierda
         }, 1000); //setTimeout---> Primer parámetro es la función a ejecutar y el segundo indica el número
                 // en milisegundos antes de la ejecución 
 
@@ -38,14 +50,26 @@
     
     function mostrarEstado1() {
         document.getElementById("estado2").className = "animated bounceOutLeft"; // efecto deslizante de salida para la izquierda
-        
-        setTimeout(function(){ 
-            document.getElementById("estado2").style.display = "none"; // Ocultar el elemento estado1
-            document.getElementById("estado1").style.display = "block"; // Mostrar el elemento estado2
-            document.getElementById("estado1").className = "animated bounceInRight"; // efecto deslizante de entrada para la izquierda
+        document.getElementById("elDiv1").className = "paso datos active col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1 animated bounceOutRight"; //efecto deslizante de salida para la derecha
+        document.getElementById("elDiv2").className = "paso obra col-xs-12 col-sm-4 col-md-4 col-lg-4 animated bounceOutRight"; //efecto deslizante de salida para la derecha
+        document.getElementById("titulo").className = "linea col-xs-12 col-sm-3 col-md-3 col-lg-3 animated bounceOutRight"; //efecto deslizante de salida para la derecha
             
-            document.getElementById("elDiv1").className = "paso datos active col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1"; //cambio a imagen de datos activa
-            document.getElementById("elDiv2").className = "paso obra col-xs-12 col-sm-4 col-md-4 col-lg-4"; //cambioa imagen de obra inactiva
+        setTimeout(function(){ 
+            
+            document.getElementById("estado2").style.display = "none"; // Ocultar el elemento estado1
+            document.getElementById("elDiv1").style.display = "none"; // Ocultar el div1
+            document.getElementById("elDiv2").style.display = "none"; // Ocultar el div2
+            document.getElementById("titulo").style.display = "none"; // Ocultar el titulo-tutorial
+            document.getElementById("estado1").style.display = "block"; // Mostrar el elemento estado2
+            document.getElementById("estado1").className = "animated bounceInRight"; // efecto deslizante de entrada para la derecha
+            
+            document.getElementById("elDiv1").style.display = "block"; // mostrar el elemento div1
+            document.getElementById("elDiv2").style.display = "block"; // mostrar el elemento div2
+            document.getElementById("titulo").style.display = "block"; // mostrar el titulo-tutorial
+
+            document.getElementById("elDiv1").className = "paso datos active col-xs-12 col-sm-2 col-md-2 col-lg-2 col-md-offset-1 animated bounceInLeft"; // efecto deslizante de entrada para la izquierda
+            document.getElementById("elDiv2").className = "paso obra col-xs-12 col-sm-4 col-md-4 col-lg-4 animated bounceInLeft"; // efecto deslizante de entrada para la izquierda
+            document.getElementById("titulo").className = "linea col-xs-12 col-sm-3 col-md-3 col-lg-3 animated bounceInLeft"; // efecto deslizante de entrada para la izquierda
         }, 1000);//setTimeout---> Primer parámetro es la función a ejecutar y el segundo indica el número
     }            // en milisegundos antes de la ejecución
 

@@ -1,7 +1,9 @@
 
 #respuesta{
  position: absolute;
- width: 46%;
+ width: auto;
+ font-size: 15px;
+ font-weight: bold;
 }
 h4{
 	margin-left: 2%;
